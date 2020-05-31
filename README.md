@@ -5,7 +5,7 @@ Submission untuk kelas Dicoding - Belajar Dasar Pemrograman Web (Prakerja)
 Berikut kriteria submission yang harus Anda penuhi:
 
 ## Proyek Halaman Website dengan semantic meaning
-* Menerapkan konsep semantic meaning dalam menyusun struktur website (terdapat elemen <header>, <footer>, <main>, <article> dan <aside>). 
+* Menerapkan konsep semantic meaning dalam menyusun struktur website (terdapat elemen header, footer, main, article dan aside). 
 * Tema yang ditampilkan bebas, namun wajib menampilkan identitas diri yang ditampilkan dalam elemen <aside>.
 * Menyusun layout dengan menggunakan float atau flexbox.
 
