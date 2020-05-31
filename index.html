@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Website Nusa Penida</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var pull 		= $('#pull'); // navigasi 
+                    menu 		= $('nav ul'); // menu
+    
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 600 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h1>NUSA PENIDA</h1>
+                <p><i>The Blue Paradise</i></p>
+            </div>
+            <nav class="clearfix">
+                <a href="#" id="pull">Menu</a>
+                <ul class="clearfix">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#geografis">Geografi dan Jumlah Penduduk</a></li>
+                    <li><a href="#matapencarian">Mata Pencarian Penduduk</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <p class="marquee">
+            <span>
+                Selamat datang di Website Nusa Penida
+            </span>
+        </p>
+        <div id="content">
+            <article class="card">
+                <p id='tanggal'></p>
+            </article>
+            <article id="tentang" class="card">
+                <h2>Tentang Nusa Penida</h2>
+                <img src="assets/img/map_nusa_penida.jpg" class="featured-image" alt="sejarah">
+                <p>
+                    Nusa penida apa dan dimana ? </p>
+                <p> Nama nusa penida saat ini mungkin sedikit asing bagi wisatawan yang liburan di bali
+                    Berikut sedikit ulasan tentang pulau yang terkenal dengan ikon ikan mola mola ini</p>
+                <p> Nusa Penida merupakan sebuah pulau kecil yang menjadi bagian dari wilayah Kabupaten klungkung. dengan luas wilayah : 315 Km2.
+                    Nusa penida merupakan sebuah Kecamatan Nusa Penida terdiri dari tiga kepulauan yaitu pulau Nusa Penida, Nusa Lembongan dan Pulau Ceningan. Pulau Nusa Penida bisa ditempuh dari empat tempat yaitu lewat Benoa lewat Sanur dengan menumpang perahu jarak tempuh + 1,5 Jam perjalanan.. 
+                </p>
+            </article>
+            <article id="geografis" class="card">
+                <h2>Geografi dan Jumlah Penduduk</h2>
+                <img src="assets/img/geografis.jpg" class="featured-image" alt="geografis">
+                <p>Lewat Kusamba dengan menumpang Jukung jerak tempuh +1,5 jam perjalanan. sedangkan kalau lewat Padangbai dengan menumpang Kapal Boat yang jarak tempuh + 1 jam perjalanan. </p>
+                <p>Berdasarkan hasil registrasi penduduk pada tahun 2008, jumlah penduduk di kawasan barat Pulau Nusa Penida adalah 24003 jiwa. Jumlah penduduk di Kecamatan Nusa Penida 47.448 jiwa Secara umum kondisi Topografi Nusa Penida tergolong landai sampai berbukit</p>    
+            </article>
+            
+            <article id="matapencarian" class="card">
+                <section>
+                    <h2>Mata Pencarian Penduduk</h2>
+                    <img src="assets/img/mata_pencarian.jpg" class="featured-image" alt="Mata Pencarian">
+                    <p>Semakin ke selatan kemiringan lerengnya semakin bergelombang. Demikian juga pulau Lembongan bagian Utara merupakan lahan datar Sedangkan Pulau Ceningan memililiki kondisi tanah bergelombang dan berbukit.</p>
+                    <p> Mata pencaharian penduduk adalah pertanian yaitu petani rumput laut dan sektor perikanan merupakan mata pencaharian akan tetapi mulai dari awal 1990an banyak penduduknya yang beralih propesi menjadi pekerja pariwisata seperti pemandu wisata, diving guide, driver boat maupun transportasi untuk menunjang sector pariwisata yang mulai berkembang</p>    
+                </section>
+            </article>
+        </div>
+        <aside>
+            <article class="biodata card">
+                 <header>               
+                     <p>BIODATA DIRI</p>
+                     <figure>
+                            <img  src="assets/img/biodata.jpeg" class="biodata img">
+                      </figure>
+                 </header>
+                 <section>
+                    <table>
+                       <tr style="text-align:left">
+                          <th>Nama</th>
+                          <td>Igustiawan</td>
+                       </tr>
+                       <tr style="text-align:left">
+                          <th>Alamat</th>
+                          <td>Jambi</td>
+                       </tr>
+                       <tr style="text-align:left">
+                          <th>Tanggal Lahir</th>
+                          <td>12 Agustus</td>
+                       </tr>
+                       <tr style="text-align:left">
+                        <th>Hobby</th>
+                        <td>Ngoding</td>
+                     </tr>
+                   </table>
+                 </section>
+            </article>
+            <article  style="text-align:center" class="profile card">
+                <button onclick="myFunction()">Dark Mode</button>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p>Igustiawan &#169; 2020 Dicoding Academy</p>
+    </footer>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
+    <script type='text/javascript'>
+        window.setTimeout("hari()",0)
+        function hari(){
+         var namah = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu");
+         var namab = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "November", "Desember");
+         var tanggal = new Date();
+         setTimeout("hari()",0);
+            document.getElementById("tanggal").innerHTML =namah[tanggal.getDay()]+", "+tanggal.getDate()+" "+namab[tanggal.getMonth()]+" "+tanggal.getFullYear();
+        }
+        </script>
+    </body>
+</html>
